@@ -1,0 +1,29 @@
+post http://127.0.0.16/register.php
+
+{"username": "user1", "password": "pass123"}
+
+###
+post http://127.0.0.16/login.php
+
+{"username": "user1", "password": "pass123"}
+
+###
+post http://127.0.0.16/add_task.php
+
+{"token": "836dfff1c2e1fd5dfc99670ed4b0f1883f950deb24165022f338ddefff87cbb0", "title": "Nueva tarea", "description": "Descripción de la tarea"}
+
+###
+post http://127.0.0.16/delete_task.php
+{"token": "836dfff1c2e1fd5dfc99670ed4b0f1883f950deb24165022f338ddefff87cbb0", "task_id": 1}
+
+###
+post http://127.0.0.16/edit_task.php
+
+{"token": "836dfff1c2e1fd5dfc99670ed4b0f1883f950deb24165022f338ddefff87cbb0", "task_id": 1, "title": "Tarea actualizada", "description": "Descripción actualizada"}
+
+
+###
+post http://127.0.0.16/list_tasks.php
+
+{"token": "10d756bd0ef4ef4477b1f289f7e38d08cc295d91b9c3f82999cf1fdf77603fcc"}
+
