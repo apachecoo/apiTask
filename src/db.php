@@ -2,7 +2,7 @@
 $servername = "mariadb";
 $username = "user";
 $password = "12345";
-$dbname = "level2_employees";
+$dbname = "tasks";
 
 try {
     $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
